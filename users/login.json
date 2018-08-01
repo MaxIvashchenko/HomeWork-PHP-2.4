@@ -1,0 +1,14 @@
+[
+  {
+    "username": "Messi",
+    "login": "user",
+    "password": "pass",
+    "is_admin": false
+  },
+  {
+    "username": "Ronaldo",
+    "login": "admin",
+    "password": "pass",
+    "is_admin": true
+ }
+]
