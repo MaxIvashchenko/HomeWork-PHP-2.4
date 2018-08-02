@@ -9,7 +9,10 @@ function emptyUser ($grantAccessGuest = false) {
     die('403 Forbidden');
 }
 
-
+function emptyTestName () {
+    header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found'); 
+    die('404 Not Found');
+}
 
 function login($login, $password)
 {
