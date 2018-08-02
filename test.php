@@ -8,9 +8,10 @@ if (!empty($_GET["name"])) {
 			$tests = file_get_contents($path);
 			$tests = json_decode($tests,true);
 		} else {
-			header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found'); 
-			die('404 Not Found');
+			emptyTestName ()
 		}
+} else {
+	emptyTestName ()
 }
 $_SESSION['tests'] = $tests;
 $ok = [];
