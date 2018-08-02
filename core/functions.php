@@ -51,10 +51,11 @@ function getUsers()
 }
 
 function whoUR () {
-    if (!empty($array['arrayElement']) == ['user']['username']) { 
-    echo ", " . $_SESSION['user']['username'];} 
-    elseif (!empty($array['arrayElement']) == ['guest'])  {
-    echo ", " . $_SESSION['guest'];}
-    else {echo " ";}
+    if (!empty($_SESSION['user']['username'])) { 
+        return ", " .  $_SESSION['user']['username'];       
+    } elseif (!empty($_SESSION['guest']))  {
+        return ", " . $_SESSION['guest'];
+    }  
+    return " ";
 }
 ?>
