@@ -24,7 +24,7 @@ if (!empty($_POST['for_guest'])) {
 	<meta charset="utf-8">
 </head>
 <body>
-	<h2>Добро пожаловать<?php whoUR() ?>!</h2>
+	<h2>Добро пожаловать<?php echo whoUR ($_SESSION) ?>!</h2>
 	<h3>Главная страница</h3>
 	 <?php if (empty($_SESSION)) { ?>
 	 <h4>Авторизация</h4>
