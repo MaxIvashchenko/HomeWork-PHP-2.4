@@ -27,7 +27,7 @@ foreach($files as $file) {
 </head>
 <body>
 
-<h1>Добро пожаловать<?php  whoUR() ?>!</h1>
+<h1>Добро пожаловать<?php echo whoUR ($_SESSION) ?>!</h1>
 	<h2>Выберите тест:</h2>
 	<?php for($i=0; $i<sizeof($files); $i++) { 
     if (file_exists($direction.'/'.$files[$i])) { ?>
