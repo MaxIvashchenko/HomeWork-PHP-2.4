@@ -8,10 +8,10 @@ if (!empty($_GET["name"])) {
 			$tests = file_get_contents($path);
 			$tests = json_decode($tests,true);
 		} else {
-			emptyTestName ()
+			emptyTestName ();
 		}
 } else {
-	emptyTestName ()
+	emptyTestName ();
 }
 $_SESSION['tests'] = $tests;
 $ok = [];
